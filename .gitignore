@@ -1,0 +1,57 @@
+# Environment & Tools
+.venv/
+tools/
+venv/
+ENV/
+env/
+.env
+.cache/
+*.exe
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Large datasets and media files
+data/raw/
+data/interim/
+data/processed/
+*.zip
+*.tar
+*.gz
+*.wav
+*.mp3
+*.flac
+*.ogg
+
+# Models and large checkpoints
+models/
+artifacts/
+*.pt
+*.pth
+*.bin
+*.onnx
+*.safetensors
+*.joblib
+*.parquet
+
+# OS specific
+Thumbs.db
+Desktop.ini
+.DS_Store

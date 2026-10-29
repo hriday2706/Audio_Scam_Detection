@@ -1,0 +1,106 @@
+global:
+  random_seed: 42
+  split_manifest: "data/manifests/splits_en.csv"
+  reports_dir: "reports"
+  metrics_dir: "reports/metrics"
+  figures_dir: "reports/figures"
+  models_dir: "models"
+
+experiments:
+  E1:
+    id: "E1_tfidf_lr"
+    name: "TF-IDF + Logistic Regression (Reference Transcript)"
+    type: "text"
+    transcript_col: "transcript"
+    vectorizer:
+      ngram_range: [1, 2]
+      max_features: 5000
+      sublinear_tf: true
+    classifier:
+      model: "LogisticRegression"
+      C: 1.0
+      max_iter: 1000
+
+  E2:
+    id: "E2_distilbert"
+    name: "DistilBERT Fine-Tuned (Reference Transcript)"
+    type: "text_transformer"
+    transcript_col: "transcript"
+    model_name: "distilbert/distilbert-base-uncased"
+    max_length: 256
+    batch_size: 16
+    learning_rate: 2.0e-5
+    epochs: 3
+    weight_decay: 0.01
+
+  E3:
+    id: "E3_audio_lr"
+    name: "Acoustic Features + Logistic Regression"
+    type: "audio"
+    features_cache: "data/processed/audio_features_en.parquet"
+    classifier:
+      model: "LogisticRegression"
+      C: 1.0
+      max_iter: 1000
+
+  E4:
+    id: "E4_audio_rf"
+    name: "Acoustic Features + Random Forest"
+    type: "audio"
+    features_cache: "data/processed/audio_features_en.parquet"
+    classifier:
+      model: "RandomForestClassifier"
+      n_estimators: 100
+      max_depth: 10
+      random_state: 42
+
+  E5:
+    id: "E5_hubert_frozen"
+    name: "Frozen HuBERT Embeddings + Logistic Regression"
+    type: "audio_embeddings"
+    model_name: "facebook/hubert-base-ls960"
+    embeddings_cache: "data/processed/hubert_embeddings_en.parquet"
+    pooling: "mean"
+    batch_size: 8
+    classifier:
+      model: "LogisticRegression"
+      C: 1.0
+      max_iter: 1000
+
+  E6:
+    id: "E6_fusion_ref"
+    name: "Late Fusion (E1 Text + E3 Audio)"
+    type: "late_fusion"
+    text_model: "E1_tfidf_lr"
+    audio_model: "E3_audio_lr"
+    strategy: "logistic_regression_oof"
+
+  E7:
+    id: "E7_asr_tfidf_lr"
+    name: "TF-IDF + Logistic Regression (Whisper ASR Transcript)"
+    type: "text_asr"
+    transcript_col: "asr_transcript"
+    asr_cache: "data/processed/whisper_transcripts_en.parquet"
+    whisper_model: "openai/whisper-small"
+    vectorizer:
+      ngram_range: [1, 2]
+      max_features: 5000
+      sublinear_tf: true
+    classifier:
+      model: "LogisticRegression"
+      C: 1.0
+      max_iter: 1000
+
+  E8:
+    id: "E8_fusion_asr"
+    name: "Late Fusion (E7 ASR Text + E3 Audio)"
+    type: "late_fusion"
+    text_model: "E7_asr_tfidf_lr"
+    audio_model: "E3_audio_lr"
+    strategy: "logistic_regression_oof"
+
+audio_features:
+  sample_rate: 16000
+  n_mfcc: 20
+  n_fft: 2048
+  hop_length: 512

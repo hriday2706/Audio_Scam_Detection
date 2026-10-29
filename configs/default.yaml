@@ -1,0 +1,19 @@
+project_name: "VoxShield"
+version: "0.1.0"
+random_seed: 42
+
+paths:
+  data_dir: "data"
+  raw_dir: "data/raw/vishguard"
+  processed_dir: "data/processed"
+  manifests_dir: "data/manifests"
+  models_dir: "models"
+  artifacts_dir: "artifacts"
+  reports_dir: "reports"
+  figures_dir: "reports/figures"
+  metrics_dir: "reports/metrics"
+
+hardware:
+  prefer_cuda: true
+  auto_detect: true
+  fallback_to_cpu: true

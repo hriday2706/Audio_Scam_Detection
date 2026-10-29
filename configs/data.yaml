@@ -1,0 +1,26 @@
+dataset:
+  name: "VISHGUARD"
+  version: "v3.0"
+  zenodo_record_id: 20429763
+  zenodo_url: "https://zenodo.org/api/records/20429763/files/vishguard_dataset.zip/content"
+  archive_checksum_md5: "b6bf4c29812159ddecf7e6042fe0958f"
+  license: "CC-BY-4.0"
+  languages: ["en", "fr", "ar"]
+  primary_language: "en"
+  audio_sample_rate: 16000
+  audio_channels: 1
+
+audit:
+  manifest_path: "data/manifests/vishguard_full_manifest.csv"
+  english_manifest_path: "data/manifests/vishguard_en_manifest.csv"
+  audit_report_path: "reports/data_audit_report.json"
+  smoke_manifest_path: "data/manifests/smoke_test_manifest.csv"
+  smoke_sample_size: 30
+
+split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+  stratify_columns: ["label"]
+  split_manifest_path: "data/manifests/splits_en.csv"

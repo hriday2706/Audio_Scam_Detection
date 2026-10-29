@@ -1,0 +1,22 @@
+{
+  "total_input_records": 1065,
+  "valid_records_count": 1065,
+  "excluded_records_count": 0,
+  "exclusions": [],
+  "duplicate_sample_ids_count": 0,
+  "repeated_transcripts_count": 108,
+  "class_balance": {
+    "legitimate": 536,
+    "scam": 529
+  },
+  "language_distribution": {
+    "en": 1065
+  },
+  "audio_checks": {
+    "checked_count": 0,
+    "readable_count": 0,
+    "sample_rate_counts": {},
+    "channel_counts": {},
+    "clipped_count": 0
+  }
+}

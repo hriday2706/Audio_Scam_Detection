@@ -1,0 +1,120 @@
+{
+  "experiment_id": "E3_audio_lr",
+  "model": "Acoustic Features + Logistic Regression",
+  "modality": "audio",
+  "input": "handcrafted_features",
+  "val_metrics": {
+    "accuracy": 1.0,
+    "precision_scam": 1.0,
+    "recall_scam": 1.0,
+    "f1_scam": 1.0,
+    "macro_f1": 1.0,
+    "pr_auc": 1.0,
+    "roc_auc": 1.0,
+    "threshold": 0.57,
+    "sample_count": 152,
+    "confusion_matrix": [
+      [
+        77,
+        0
+      ],
+      [
+        0,
+        75
+      ]
+    ]
+  },
+  "test_metrics": {
+    "accuracy": 0.9935,
+    "precision_scam": 0.987,
+    "recall_scam": 1.0,
+    "f1_scam": 0.9935,
+    "macro_f1": 0.9935,
+    "pr_auc": 0.9995,
+    "roc_auc": 0.9995,
+    "threshold": 0.57,
+    "sample_count": 153,
+    "confusion_matrix": [
+      [
+        76,
+        1
+      ],
+      [
+        0,
+        76
+      ]
+    ],
+    "f1_scam_ci": [
+      0.9784,
+      1.0
+    ],
+    "pr_auc_ci": [
+      0.9979,
+      1.0
+    ],
+    "training_time_seconds": 0.0064,
+    "per_sample_inference_seconds": 0.0
+  },
+  "top_features": [
+    {
+      "feature": "duration_sec",
+      "importance": 2.8901
+    },
+    {
+      "feature": "mfcc_delta_14_mean",
+      "importance": -0.9254
+    },
+    {
+      "feature": "mfcc_14_mean",
+      "importance": -0.9041
+    },
+    {
+      "feature": "mfcc_delta_17_mean",
+      "importance": -0.8023
+    },
+    {
+      "feature": "mfcc_delta_11_mean",
+      "importance": -0.7416
+    },
+    {
+      "feature": "mfcc_delta_9_mean",
+      "importance": 0.7031
+    },
+    {
+      "feature": "rms_std",
+      "importance": 0.6546
+    },
+    {
+      "feature": "mfcc_delta_15_std",
+      "importance": 0.5948
+    },
+    {
+      "feature": "mfcc_delta_5_mean",
+      "importance": 0.5921
+    },
+    {
+      "feature": "mfcc_delta_13_std",
+      "importance": 0.5841
+    },
+    {
+      "feature": "pitch_f0_mean",
+      "importance": 0.5797
+    },
+    {
+      "feature": "mfcc_delta_19_mean",
+      "importance": -0.5353
+    },
+    {
+      "feature": "mfcc_delta_5_std",
+      "importance": -0.5326
+    },
+    {
+      "feature": "rms_mean",
+      "importance": -0.5181
+    },
+    {
+      "feature": "mfcc_12_mean",
+      "importance": -0.503
+    }
+  ]
+}

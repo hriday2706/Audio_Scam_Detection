@@ -1,0 +1,7 @@
+{
+  "model": "openai/whisper-small",
+  "transcribed_count": 20,
+  "mean_wer": 0.0459,
+  "median_wer": 0.0405,
+  "mean_cer": 0.0178
+}

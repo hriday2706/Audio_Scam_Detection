@@ -1,0 +1,166 @@
+{
+  "top_scam_ngrams": [
+    {
+      "feature": "you must",
+      "weight": 2.1172
+    },
+    {
+      "feature": "must",
+      "weight": 2.101
+    },
+    {
+      "feature": "immediately",
+      "weight": 1.3859
+    },
+    {
+      "feature": "authority",
+      "weight": 1.3397
+    },
+    {
+      "feature": "reward",
+      "weight": 1.2969
+    },
+    {
+      "feature": "am the",
+      "weight": 1.2868
+    },
+    {
+      "feature": "my",
+      "weight": 1.2445
+    },
+    {
+      "feature": "only",
+      "weight": 1.2204
+    },
+    {
+      "feature": "am",
+      "weight": 1.21
+    },
+    {
+      "feature": "act",
+      "weight": 1.1975
+    },
+    {
+      "feature": "secure",
+      "weight": 1.1883
+    },
+    {
+      "feature": "my authority",
+      "weight": 1.1769
+    },
+    {
+      "feature": "now",
+      "weight": 1.1569
+    },
+    {
+      "feature": "pay",
+      "weight": 1.1417
+    },
+    {
+      "feature": "obey my",
+      "weight": 1.1047
+    },
+    {
+      "feature": "obey",
+      "weight": 1.1047
+    },
+    {
+      "feature": "must immediately",
+      "weight": 1.004
+    },
+    {
+      "feature": "transfer",
+      "weight": 0.9981
+    },
+    {
+      "feature": "to secure",
+      "weight": 0.9829
+    },
+    {
+      "feature": "account",
+      "weight": 0.9691
+    }
+  ],
+  "top_legit_ngrams": [
+    {
+      "feature": "please",
+      "weight": -1.9423
+    },
+    {
+      "feature": "thank",
+      "weight": -1.5514
+    },
+    {
+      "feature": "thank you",
+      "weight": -1.5514
+    },
+    {
+      "feature": "call",
+      "weight": -1.2816
+    },
+    {
+      "feature": "we",
+      "weight": -1.2461
+    },
+    {
+      "feature": "message",
+      "weight": -1.1737
+    },
+    {
+      "feature": "from",
+      "weight": -0.9873
+    },
+    {
+      "feature": "from your",
+      "weight": -0.9723
+    },
+    {
+      "feature": "pm",
+      "weight": -0.8845
+    },
+    {
+      "feature": "this message",
+      "weight": -0.8705
+    },
+    {
+      "feature": "is from",
+      "weight": -0.8699
+    },
+    {
+      "feature": "our",
+      "weight": -0.8499
+    },
+    {
+      "feature": "call is",
+      "weight": -0.8457
+    },
+    {
+      "feature": "message is",
+      "weight": -0.8336
+    },
+    {
+      "feature": "is",
+      "weight": -0.8121
+    },
+    {
+      "feature": "for your",
+      "weight": -0.8068
+    },
+    {
+      "feature": "this call",
+      "weight": -0.8056
+    },
+    {
+      "feature": "next",
+      "weight": -0.7668
+    },
+    {
+      "feature": "for",
+      "weight": -0.7623
+    },
+    {
+      "feature": "please call",
+      "weight": -0.7384
+    }
+  ]
+}
