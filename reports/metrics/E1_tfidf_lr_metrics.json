@@ -52,7 +52,7 @@
       1.0,
       1.0
     ],
-    "training_time_seconds": 0.0659,
-    "per_sample_inference_seconds": 5e-05
+    "training_time_seconds": 0.0525,
+    "per_sample_inference_seconds": 4.6e-05
   }
 }

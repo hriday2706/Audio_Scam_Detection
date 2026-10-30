@@ -52,7 +52,7 @@
       0.9956,
       1.0
     ],
-    "training_time_seconds": 0.1772,
+    "training_time_seconds": 0.1641,
     "per_sample_inference_seconds": 2.6e-05
   },
   "top_features": [

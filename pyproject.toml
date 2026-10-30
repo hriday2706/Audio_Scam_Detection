@@ -5,11 +5,11 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "voxshield"
 version = "0.1.0"
-description = "VoxShield: Multimodal Voice Scam Risk Analysis"
+description = "Multimodal Voice Scam Detection & Risk Analysis Framework"
 readme = "README.md"
 requires-python = ">=3.11"
 authors = [
-    { name = "VoxShield Research Team" }
+    { name = "Audio Scam Detection Research Team" }
 ]
 classifiers = [
     "Programming Language :: Python :: 3",

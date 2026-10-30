@@ -8,13 +8,13 @@ python_executable        : E:\Audio_Scam_Detection\.venv\Scripts\python.exe
 cpu_count_logical        : 20
 cpu_count_physical       : 14
 total_ram_gb             : 15.71
-available_ram_gb         : 1.64
+available_ram_gb         : 1.55
 gpu_available            : True
 gpu_name                 : NVIDIA GeForce RTX 4050 Laptop GPU
 gpu_vram_gb              : 6.0
 cuda_version             : 12.4
-disk_c_free_gb           : 3.99
-disk_e_free_gb           : 170.94
+disk_c_free_gb           : 1.62
+disk_e_free_gb           : 167.39
 pytorch_version          : 2.6.0+cu124
 transformers_version     : 5.22.0
 librosa_version          : 0.11.0

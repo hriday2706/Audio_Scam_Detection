@@ -1,5 +1,5 @@
 experiment_id,model_description,modality,input_source,test_samples,accuracy,precision_scam,recall_scam,f1_scam,f1_scam_95_ci,macro_f1,pr_auc,roc_auc,train_time_sec,inference_per_sample_sec
-E1_tfidf_lr,TF-IDF + Logistic Regression,text,reference_transcript,153,0.9935,0.987,1.0,0.9935,"[0.9767, 1.0]",0.9935,1.0,1.0,0.0659,5e-05
-E3_audio_lr,Acoustic Features + Logistic Regression,audio,handcrafted_features,153,0.9935,0.987,1.0,0.9935,"[0.9784, 1.0]",0.9935,0.9995,0.9995,0.0064,0.0
-E4_audio_rf,Acoustic Features + Random Forest,audio,handcrafted_features,153,0.9739,0.95,1.0,0.9744,"[0.9459, 0.9944]",0.9738,0.9988,0.9988,0.1772,2.6e-05
-E6_fusion_ref,Multimodal Late-Fusion (Logistic Regression Meta-Classifier),multimodal (text + audio),prob_scam_E1,153,0.9935,0.987,1.0,0.9935,"[0.9784, 1.0]",0.9935,1.0,1.0,0.0031,0.0
+E1_tfidf_lr,TF-IDF + Logistic Regression,text,reference_transcript,153,0.9935,0.987,1.0,0.9935,"[0.9767, 1.0]",0.9935,1.0,1.0,0.0525,4.6e-05
+E3_audio_lr,Acoustic Features + Logistic Regression,audio,handcrafted_features,153,0.9935,0.987,1.0,0.9935,"[0.9784, 1.0]",0.9935,0.9995,0.9995,0.007,7e-06
+E4_audio_rf,Acoustic Features + Random Forest,audio,handcrafted_features,153,0.9739,0.95,1.0,0.9744,"[0.9459, 0.9944]",0.9738,0.9988,0.9988,0.1641,2.6e-05
+E6_fusion_ref,Multimodal Late-Fusion (Logistic Regression Meta-Classifier),multimodal (text + audio),prob_scam_E1,153,0.9935,0.987,1.0,0.9935,"[0.9784, 1.0]",0.9935,1.0,1.0,0.002,0.0

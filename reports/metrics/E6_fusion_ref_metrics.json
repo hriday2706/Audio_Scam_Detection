@@ -58,7 +58,7 @@
       1.0,
       1.0
     ],
-    "training_time_seconds": 0.0031,
+    "training_time_seconds": 0.002,
     "per_sample_inference_seconds": 0.0
   },
   "simple_average_test_metrics": {

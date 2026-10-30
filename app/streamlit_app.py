@@ -1,4 +1,4 @@
-"""VoxShield Interactive Streamlit Research Demonstration."""
+"""Multimodal Voice Scam Risk Analysis Interactive Streamlit Demonstration."""
 
 import os
 import tempfile
@@ -10,12 +10,12 @@ from voxshield.utils.paths import MODELS_DIR, RAW_DATA_DIR
 
 # Set page configuration
 st.set_page_config(
-    page_title="VoxShield - Voice Scam Risk Analysis",
+    page_title="Multimodal Voice Scam Risk Analysis",
     page_icon="🛡️",
     layout="wide",
 )
 
-st.title("🛡️ VoxShield: Multimodal Voice Scam Risk Analysis")
+st.title("🛡️ Multimodal Voice Scam Risk Analysis")
 st.markdown(
     "An academic research tool evaluating the complementary value of acoustic features and speech transcripts "
     "for voice phishing (vishing) risk estimation."
